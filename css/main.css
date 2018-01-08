@@ -1,0 +1,200 @@
+body {
+  background-image: url(../assets/img/blackboard.jpg);
+  background-size: cover;
+  display: grid;
+  font-family: 'Encode Sans Expanded', sans-serif;
+  grid-template-columns: 10% repeat(3, 1fr) 10%;
+  repeat(11, 1fr);
+  grid-template-rows: 50px 400px auto auto 60px;
+  grid-template-areas:
+    "nav nav nav nav nav"
+    "header header header header header"
+    ". our-drinks our-drinks quote . "
+    " . gallery-a gallery-b gallery-c ."
+    "footer footer footer footer footer";
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+h3{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 60px 15px;
+  border: 3px solid #8ca700;
+  color: #18951d;
+}
+
+h4 {
+  color: #55653F;
+  font-size: 24px;
+  display: inline-block;
+  margin: 0;
+  padding: 5px;
+}
+
+h6 {
+  color: #18951d;
+  margin: 0;
+  padding: 5px;
+}
+
+
+/*----Estilos header---*/
+header {
+  background: url(../assets/img/header-vrai.jpg) center;
+  grid-area: header;
+}
+
+/*----Estilos header---*/
+
+
+/*----Estilos nav---*/
+nav {
+  background-color: white;
+  grid-area: nav;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+  padding: 1% 3%;
+}
+
+li {
+  list-style-type: none;
+  padding: 8px 18px;;
+}
+
+a {
+  text-decoration: none;
+  color: #888;
+}
+
+nav li:hover {
+  border: 3px solid #18951d;
+}
+
+.menu ul, .menu li, .menu-mobile, .menu, li, .logo {
+  display: inline-block;
+  margin: 0;
+}
+
+.logo {
+  width: 9%;
+}
+
+.menu {
+  float: right;
+}
+/*----Fin Estilos nav---*/
+
+
+/*----Estilos Our-drinks---*/
+
+.our-drinks {
+  color: #D3D3D3;
+  grid-area: our-drinks;
+  padding: 40px 30px;
+}
+
+.peppermint {
+  display: inline-block;
+  width: 90px;
+}
+
+.drinks-feature {
+  padding: 10px 0;
+}
+
+.drinks-icons {
+  background: url(../assets/img/background-pink.jpg) center;
+  background-size: cover;
+  border-radius: 100%;
+  display: inline-block;
+  height: 80px;
+  margin-right: 15px;
+  text-align: center;
+  width: 80px;
+}
+
+.drinks-feature-images {
+  border: 3px solid white;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: inline-block;
+  height: 60px;
+  padding: 5px;
+}
+
+/*----Fin Estilos Our-drinks---*/
+
+
+/*----Estilos Quotes---*/
+
+.quote {
+  color: black;
+  grid-area: quote;
+  padding: 20px 30px 40px 10px;
+  text-align: center;
+}
+
+.cocktels {
+  width: 70%;
+  margin-top: -80px;
+}
+
+/*----Fin Estilos Quotes---*/
+
+
+/*----Estilos Gallery---*/
+
+.gallery-a, .gallery-b, .gallery-c {
+  background: url(../assets/img/wood.jpg) left;
+  background-size: contain;
+  margin: 10px 5px 20px 5px;
+  padding: 20px 10px;
+}
+
+.gallery-a {
+  grid-area: gallery-a;
+
+}
+
+.gallery-b {
+  grid-area: gallery-b;
+}
+
+.gallery-c {
+  grid-area: gallery-c;
+}
+
+.flavor-image {
+  width: 100%;
+}
+
+button {
+  background: rgba(250, 250, 250, 0.5);
+  border: 2px solid #8ca700;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:focus {
+  border-radius: 16px;
+  outline-color: #18951d;
+}
+
+/*----Fin Estilos Gallery---*/
+
+
+/*----Estilos Footer---*/
+
+footer {
+  background: rgba(250, 250, 250, 0.2);
+  color: white;
+  font-size: 10px;
+  grid-area: footer;
+  margin-top: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+/*----Fin Estilos Footer---*/

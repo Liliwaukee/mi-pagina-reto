@@ -1,0 +1,31 @@
+@media all and (max-width: 768px){
+  body {
+    background-position: center;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 50px 400px repeat( 5, auto) 60px;
+    grid-template-areas:
+      "nav nav nav"
+      "header header header"
+      ". our-drinks ."
+      ". quote ."
+      ". gallery-a ."
+      ". gallery-b ."
+      ". gallery-c ."
+      "footer footer footer";
+  }
+
+  nav {
+    text-align: center;
+  }
+  
+   .menu-mobile {
+    content: url(../assets/img/menu.svg);
+    height: 100%;
+    float: right;
+  }
+
+  .logo {
+    width: 15%;
+  }
+
+}
